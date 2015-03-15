@@ -3,6 +3,7 @@ package lesson150312;
 public class A {
 	
 	private int i;
+	//comment
 
 	public A() {
 	}
