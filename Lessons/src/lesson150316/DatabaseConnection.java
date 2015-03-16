@@ -13,7 +13,7 @@ public class DatabaseConnection {
 		}
 	}
 
-	public void free() {
+	public static void free() {
 		Counter--;
 
 	}

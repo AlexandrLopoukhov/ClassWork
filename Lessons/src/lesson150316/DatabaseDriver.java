@@ -13,7 +13,7 @@ public class DatabaseDriver {
 		DatabaseConnection connection4 = DatabaseConnection.create();
 
 		if (connection4 == null) {
-			connection.free();
+			DatabaseConnection.free();
 		}
 
 		System.out.println(connection);
