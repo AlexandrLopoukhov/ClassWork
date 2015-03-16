@@ -12,6 +12,10 @@ public class DatabaseDriver {
 		DatabaseConnection connection3 = DatabaseConnection.create();
 		DatabaseConnection connection4 = DatabaseConnection.create();
 
+		if (connection4 == null) {
+			connection.free();
+		}
+
 		System.out.println(connection);
 		System.out.println(connection2);
 		System.out.println(connection3);
