@@ -1,5 +1,4 @@
 package lesson150317.pets;
 
-public class Rodent extends Pet {
-
+public class Rodent extends CageBeast {
 }
