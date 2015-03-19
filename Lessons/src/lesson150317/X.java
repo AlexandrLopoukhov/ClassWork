@@ -3,6 +3,7 @@ package lesson150317;
 public class X {
 
 	int state;
+<<<<<<< HEAD
 
 	public void change() {
 		System.out.println("change from X");
@@ -16,4 +17,21 @@ public class X {
 	public void something() {
 		System.out.println("somethingX");
 	}
+=======
+	
+	
+	public void change() {
+		System.out.println("changeX");
+		state++;
+	}
+	
+	public void other() {
+		System.out.println("otherX");
+	}
+	
+	public void something() {
+		System.out.println("original something");
+	}
+	
+>>>>>>> remotes/zaal/master
 }
