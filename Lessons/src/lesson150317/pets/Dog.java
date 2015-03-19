@@ -1,6 +1,7 @@
 package lesson150317.pets;
 
 public class Dog extends Friend {
+
 	@Override
 	public void feed() {
 		whistle();
@@ -8,6 +9,7 @@ public class Dog extends Friend {
 	}
 
 	private void whistle() {
+
 		System.out.println("whisting for dog");
 
 	}

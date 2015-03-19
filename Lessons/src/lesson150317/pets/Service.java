@@ -11,22 +11,34 @@ public class Service {
 		Hamster hamster = new Hamster();
 		Canary canary = new Canary();
 
+		int x = (int) 0.24f;
+		char c = 'f';
+		int y = c;
+
+		Object o = cat;
 		Pet pet = cat;
 		Friend friend = cat;
-		Object object = cat;
-
-		serve(cat); // Pet pet = cat
-		serve(dog);
-		serve(squirrel);
-		serve(parrot);
-		serve(hamster);
-		serve(canary);
+		Cat cat2 = cat;
 
 		cat.walk();
 		friend.walk();
-		((Cat) object).walk();
+		((Cat) o).walk();
+		((Friend) pet).walk();
+
+		o = new Object();
+
+		// ((Cat)o).walk(); // Exception!
+
+		serve(cat); // Pet pet = cat;
+		serve(dog); // Pet pet = dog;
+		serve(squirrel); // Pet pet = squirrel;
+		serve(parrot); // Pet pet = parrot;
+		serve(hamster); // Pet pet = hamster;
+		serve(canary); // Pet pet = canary;
 
 	}
+
+	// Liskov Substitution principle
 
 	private static void serve(final Pet pet) {
 		pet.stroke();

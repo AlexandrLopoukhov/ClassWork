@@ -5,9 +5,9 @@ public class Audi extends Car {
 	@Override
 	public void moveTo(final int x, final int y) {
 		turnOn();
+
 		driver();
 		shutDown();
-
 	}
 
 }

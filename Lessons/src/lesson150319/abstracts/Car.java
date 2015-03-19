@@ -5,7 +5,7 @@ public abstract class Car extends Vehicle {
 
 	protected void turnOn() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	protected boolean notBroken() {
@@ -15,16 +15,16 @@ public abstract class Car extends Vehicle {
 
 	protected void driver() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	protected void shutDown() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	protected void repair() {
 		// TODO Auto-generated method stub
-		
+
 	}
 }
