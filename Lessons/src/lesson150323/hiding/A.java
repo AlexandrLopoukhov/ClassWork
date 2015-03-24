@@ -1,8 +1,8 @@
-package lesson150323.inheritance_vs_composition;
+package lesson150323.hiding;
 
 public class A {
-	
-	int state;
+
+	private int state;
 	
 	public void change() {
 		state++;
@@ -11,5 +11,5 @@ public class A {
 	public int getState() {
 		return state;
 	}
-
+	
 }

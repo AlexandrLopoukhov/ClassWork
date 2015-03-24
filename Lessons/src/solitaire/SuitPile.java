@@ -1,6 +1,10 @@
 package solitaire;
 
 class SuitPile extends CardPile {
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/zaal/master
 	SuitPile(final int x, final int y) {
 		super(x, y);
 	}

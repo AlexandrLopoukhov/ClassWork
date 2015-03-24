@@ -1,6 +1,10 @@
 package solitaire;
 
 class DiscardPile extends CardPile {
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/zaal/master
 	DiscardPile(final int x, final int y) {
 		super(x, y);
 	}
