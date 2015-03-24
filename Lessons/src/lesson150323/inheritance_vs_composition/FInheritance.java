@@ -4,12 +4,5 @@ public class FInheritance extends F {
 
 	public void methodA() {
 		m1();
-<<<<<<< HEAD
 	}
-
-=======
-		// something else
-	}
-	
->>>>>>> refs/remotes/zaal/master
 }

@@ -6,16 +6,12 @@ import java.awt.Graphics;
 class Card {
 	final static int black = 1;
 	final static int red = 0;
-
-<<<<<<< HEAD
-	final static int club = 3;
-	final static int diamond = 2;
 	final static int heart = 0;
 	final static int spade = 1;
-
+	final static int diamond = 2;
+	final static int club = 3;
 	final static int width = 50;
 	final static int height = 70;
-
 	// data fields for colors and suits
 	// private static String names[] = {"A", "2", "3", "4", "5", "6",
 	// "7", "8", "9", "10", "J", "Q", "K"};
@@ -23,36 +19,11 @@ class Card {
 	private boolean faceup;
 	private int rank;
 	private int suit;
-
-	Card link;
-
-	// constructor
-	Card(final int suiteValue, final int rankValue) {
-		suit = suiteValue;
-=======
-	final static int heart = 0;
-	final static int spade = 1;
-	final static int diamond = 2;
-	final static int club = 3;
-
-	final static int width = 50;
-	final static int height = 70;
-
-	// data fields for colors and suits
-	// private static String names[] = {"A", "2", "3", "4", "5", "6",
-	// "7", "8", "9", "10", "J", "Q", "K"};
-	
-	// data fields
-	private boolean faceup;
-	private int rank;
-	private int suit;
-
 	Card link;
 
 	// constructor
 	Card(final int suitValue, final int rankValue) {
 		suit = suitValue;
->>>>>>> refs/remotes/zaal/master
 		rank = rankValue;
 		faceup = false;
 	}

@@ -4,10 +4,6 @@ package solitaire;
  Simple Solitaire Card Game in Java
  Written by Tim Budd, Oregon State University, 1996
  */
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/zaal/master
 import java.awt.*;
 import java.applet.*;
 

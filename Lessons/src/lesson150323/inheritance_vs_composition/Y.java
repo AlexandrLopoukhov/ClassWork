@@ -5,8 +5,5 @@ public class Y extends A {
 	public void change() {
 		state += 2;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> refs/remotes/zaal/master
+
 }

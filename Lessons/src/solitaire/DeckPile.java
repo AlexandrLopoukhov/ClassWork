@@ -1,10 +1,6 @@
 package solitaire;
 
 class DeckPile extends CardPile {
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/zaal/master
 	DeckPile(final int x, final int y) {
 		// first initialize parent
 		super(x, y);
