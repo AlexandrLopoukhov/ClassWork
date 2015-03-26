@@ -32,6 +32,7 @@ class DeckPile extends CardPile {
 	}
 
 	public void select(final int tx, final int ty) {
+		// переопределение замещение
 		if (empty()) {
 			return;
 		}

@@ -6,6 +6,7 @@ class DiscardPile extends CardPile {
 	}
 
 	public void addCard(final Card aCard) {
+		// переопределение уточнение
 		if (!aCard.isFaceUp()) {
 			aCard.flip();
 		}
