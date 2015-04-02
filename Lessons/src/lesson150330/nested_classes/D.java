@@ -1,23 +1,24 @@
 package lesson150330.nested_classes;
 
-public class D {
-	class I {// nested inner
-	}
-
-	public int state;
+public class D {  // outer
 
 	static class S {
+		D d;
+		
+		S(final D d) {
+			this.d = d;
+		}
+		
 		void print() {
 			System.out.println(d.state);
 		}
-
-		D d;
 	}
-
+	
+	int state;
 	S s;
-
+	
 	public D() {
-		s = new S();
-		s.d = this;
+		s = new S(this);
 	}
+	
 }

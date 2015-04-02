@@ -7,14 +7,12 @@ public class LinkedList implements Iterable {
 	private static class Node {
 		Object item;
 		Node next;
-
-		public Node(final Object item, final Node nexy) {
-			super();
+		public Node(final Object item, final Node next) {
 			this.item = item;
-			this.next = nexy;
+			this.next = next;
 		}
 	}
-
+	
 	private static class ListIterator implements Iterator {
 
 		private LinkedList _linkedList;
@@ -22,23 +20,24 @@ public class LinkedList implements Iterable {
 
 		public ListIterator(final LinkedList linkedList) {
 			_linkedList = linkedList;
-			tmp = linkedList.first;
-			// TODO Auto-generated constructor stub
+			tmp = _linkedList.first;
 		}
 
+		@Override
 		public boolean hasNext() {
-			return (tmp != null);
+			return tmp != null;
 		}
 
+		@Override
 		public Object next() {
 			Object item = tmp.item;
 			tmp = tmp.next;
 			return item;
 		}
 
+		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-
+			// ignore
 		}
 
 	}
@@ -46,6 +45,7 @@ public class LinkedList implements Iterable {
 	Node first, last;
 
 	public void add(final Object item) {
+
 		Node fresh = new Node(item, null);
 
 		if (first == null) {
@@ -55,11 +55,13 @@ public class LinkedList implements Iterable {
 			last.next = fresh;
 			last = fresh;
 		}
+		
 	}
-
+	
+	@Override
 	public Iterator iterator() {
-
 		return new ListIterator(this);
 	}
+	
 
 }

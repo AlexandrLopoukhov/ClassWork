@@ -7,22 +7,30 @@ public class LinkedList implements Iterable {
 	Node first, last;
 
 	public void add(final Object item) {
-		Node fresh = new Node(item, null);
+		// first = new Node(item, first); BAD: must add to the tail
 
-		/*
-		 * if (first == null) { first = fresh; } else { Node last = first; while
-		 * (last != null) { last = last.next; } last.next = fresh; }
-		 */
+		Node fresh = new Node(item, null);
 
 		if (first == null) {
 			first = fresh;
-			last = fresh;
 		} else {
-			last.next = fresh;
-			last = fresh;
+			Node tmp = first;
+			while (tmp.next != null) {
+				tmp = tmp.next;
+			}
+			tmp.next = fresh;
 		}
+		
+//		if (first == null) {
+//			first = fresh;
+//			last = fresh;
+//		} else {
+//			last.next = fresh;
+//			last = fresh;
+//		}
+		
 	}
-
+	
 	public void print() {
 		Node tmp = first;
 		while (tmp != null) {
@@ -31,9 +39,10 @@ public class LinkedList implements Iterable {
 		}
 	}
 
+	@Override
 	public Iterator iterator() {
-
 		return new ListIterator(this);
 	}
+	
 
 }

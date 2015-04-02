@@ -4,29 +4,22 @@ public class Chair extends Furniture {
 
 	@Override
 	public void move() {
-		// TODO Auto-generated method stub
-		System.out.println("move chair");
-
+		System.out.println("moving chair");
 	}
 
+	@Override
 	public void clean() {
-		// TODO Auto-generated method stub
-		System.out.println("clean chair");
-
+		System.out.println("cleaning chair");
 	}
 
 	@Override
 	public void repair() {
-		// TODO Auto-generated method stub
-		System.out.println("repair chair");
-
+		System.out.println("repairing chair");
 	}
 
 	@Override
 	public void paint() {
-		// TODO Auto-generated method stub
-		System.out.println("paint chair");
-
+		System.out.println("painting chair");
 	}
 
 }

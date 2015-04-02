@@ -9,23 +9,24 @@ public class ListIterator implements Iterator {
 
 	public ListIterator(final LinkedList linkedList) {
 		_linkedList = linkedList;
-		tmp = linkedList.first;
-		// TODO Auto-generated constructor stub
+		tmp = _linkedList.first;
 	}
 
+	@Override
 	public boolean hasNext() {
-		return (tmp != null);
+		return tmp != null;
 	}
 
+	@Override
 	public Object next() {
 		Object item = tmp.item;
 		tmp = tmp.next;
 		return item;
 	}
 
+	@Override
 	public void remove() {
-		// TODO Auto-generated method stub
-
+		// ignore
 	}
 
 }

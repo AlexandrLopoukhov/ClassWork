@@ -1,28 +1,32 @@
 package lesson150326.interfaces;
 
 public class Service {
+
 	public static void main(final String[] args) {
+
 		Furniture[] things = { new Chair(), new SurgeryTable(),
 				new KitchenTable() };
 
-		serv(things);
-		Cleanable[] x = { new Cat(), new Chair() };
-		clean(x);
+		serve(things);
+		
+		clean(new Cleanable[] {new Cat(), new Chair(), new KitchenTable(), new Multiplier()});
+		
 	}
 
 	private static void clean(final Cleanable[] things) {
-		// TODO Auto-generated method stub
-		for (Cleanable furniture : things) {
-			furniture.clean();
+		for (Cleanable something : things) {
+			something.clean();
 		}
+		
 	}
 
-	private static void serv(final Furniture[] things) {
-		// TODO Auto-generated method stub
+	private static void serve(final Furniture[] things) {
 		for (Furniture furniture : things) {
 			furniture.move();
 			furniture.clean();
 			furniture.move();
 		}
+		
 	}
+
 }

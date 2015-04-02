@@ -2,9 +2,10 @@ package lesson150326.interfaces;
 
 public class Cat implements Cleanable {
 
+	@Override
 	public void clean() {
-		// TODO Auto-generated method stub
-		System.out.println("cat clean");
+		System.out.println("wearing gloves");
+		System.out.println("washing cat");
 	}
 
 }
