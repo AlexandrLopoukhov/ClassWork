@@ -1,4 +1,4 @@
-package lesson150402.exceptions;
+package lesson150406.exceptions;
 
 public class StackFullException extends Exception {
 

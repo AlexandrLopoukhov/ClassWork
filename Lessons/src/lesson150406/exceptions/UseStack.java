@@ -1,10 +1,17 @@
-package lesson150402.exceptions;
+package lesson150406.exceptions;
 
 public class UseStack {
 
 	public static void main(final String[] args) {
 		Stack stack = new Stack(3);
 
+		try {
+			stack.pop();
+		} catch (StackEmptyException e1) {
+			System.out.println(e1);
+		}
+		
+		
 		try {
 			stack.push("one");
 			stack.push("two");
@@ -14,8 +21,11 @@ public class UseStack {
 			System.out.println(e);
 		}
 		while (!stack.isEmpty()) {
-			System.out.println(stack.pop());
+			try {
+				System.out.println(stack.pop());
+			} catch (StackEmptyException e) {
+				System.out.println(e);
+			}
 		}
 	}
-
 }
