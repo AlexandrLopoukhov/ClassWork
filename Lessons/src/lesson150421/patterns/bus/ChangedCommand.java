@@ -4,6 +4,7 @@ public class ChangedCommand implements Command {
 
 	private Member _member;
 
+<<<<<<< HEAD
 	@Override
 	public void execute() {
 		System.out.println("this");
@@ -13,4 +14,16 @@ public class ChangedCommand implements Command {
 		_member = member;
 	}
 
+=======
+	ChangedCommand(final Member member) {
+		_member = member;
+		
+	}
+
+	@Override
+	public void execute() {
+		System.out.println(this);
+	}
+	
+>>>>>>> refs/remotes/zaal/master
 }

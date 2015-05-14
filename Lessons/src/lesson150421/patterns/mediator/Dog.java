@@ -1,6 +1,7 @@
 package lesson150421.patterns.mediator;
 
 public class Dog {
+<<<<<<< HEAD
 	private Cat cat;
 	private Parrot parrot;
 
@@ -42,6 +43,28 @@ public class Dog {
 	 */
 	public void setParrot(final Parrot parrot) {
 		this.parrot = parrot;
+=======
+	
+	private Cat _cat;
+	private Parrot _parrot;
+
+	public void setCat(final Cat cat) {
+		_cat = cat;
+	}
+
+	public void setParrot(final Parrot parrot) {
+		_parrot = parrot;
+	}
+	
+	public void biteEar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void дразнит() {
+		// TODO Auto-generated method stub
+		
+>>>>>>> refs/remotes/zaal/master
 	}
 
 }

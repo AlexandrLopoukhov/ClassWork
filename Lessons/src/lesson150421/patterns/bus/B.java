@@ -8,7 +8,11 @@ public class B extends Member {
 
 	@Override
 	public void accept(final Command command) {
+<<<<<<< HEAD
 		System.out.println("B received " + command);
+=======
+		System.out.println("I have received " + command);
+>>>>>>> refs/remotes/zaal/master
 	}
 
 }
